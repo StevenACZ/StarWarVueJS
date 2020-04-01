@@ -16,10 +16,13 @@ body {
 // HEADER
 .header {
   background-color: #ff1e56;
-  padding: 1rem;
+  padding: 0 2rem;
+
+  height: 7rem;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__title {
     color: #323232;
@@ -44,7 +47,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 
-
   padding: 3rem;
   background-color: #323232;
 }
@@ -64,3 +66,4 @@ body {
     margin-bottom: .3rem;
   }
 }
+

@@ -17,34 +17,19 @@ let vue = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue!',
-    currentPage: 1
   },
   methods: {
-    clearPage() {
-      let cardContainer = document.querySelector('.cardContainer')
-      while(cardContainer.hasChildNodes()) {
-        cardContainer.removeChild(cardContainer.firstChild);
-      }
-    },
-    nextPage() {
-      this.currentPage++
-      this.clearPage()
-      this.drawPage(this.currentPage)
-    },
-    previusPage() {
-      this.currentPage--
-      this.clearPage()
-      this.drawPage(this.currentPage)
-    },
-    drawPage(currentPage) {
-      fetch(`https://swapi.co/api/people/?page=${this.currentPage}`)
-      .then((response) => {
-        return response.json();
-      }).then((users) => {
-        users.results.forEach(user => {
-          this.insertCard(this.createCard(user))
+    drawPage() {
+      for (let i = 0; i < 10; i++) {
+        fetch(`https://swapi.co/api/people/?page=${i}`)
+        .then((response) => {
+          return response.json();
+        }).then((users) => {
+          users.results.forEach(user => {
+            this.insertCard(this.createCard(user))
+          })
         })
-      })
+      }
     },
     createCard(user) {
       const { 

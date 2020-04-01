@@ -11,9 +11,11 @@ body {
 
 .header {
   background-color: #ff1e56;
-  padding: 1rem;
+  padding: 0 2rem;
+  height: 7rem;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   .header__title {
     color: #323232;
     font-weight: bold; }

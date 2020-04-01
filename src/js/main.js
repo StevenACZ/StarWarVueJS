@@ -1,18 +1,3 @@
-/*let container = document.getElementById('js_container');
-
-let btnPreviusPage = document.getElementById('nextPrevius');
-let btnNextPage = document.getElementById('nextPage');
-
-let currentPage = 1 // Pagina actual
-
-
-
-
-init(currentPage)
-
-btnNextPage.addEventListener('click', () => nextPage())
-btnPreviusPage.addEventListener('click', () => previusPage())*/
-
 let vue = new Vue({
   el: '#app',
   data: {

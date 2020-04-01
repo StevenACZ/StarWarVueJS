@@ -42,21 +42,23 @@ h3 {
   color: #ffac41;
   border: 1px solid #ffac41;
   margin: 1rem;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 20rem;
+  background-color: #323232; }
   .card__title {
     margin-bottom: 1.5rem; }
   .card p {
     margin-bottom: .3rem; }
 
 .header {
-  background-color: #ff1e56;
+  background-color: #323232;
   padding: 0 2rem;
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .header__title {
-    color: #323232;
+    color: #ffac41;
     font-weight: bold; }
   .header .buttonsContainer__button {
     height: 100%;
@@ -67,8 +69,14 @@ h3 {
     cursor: pointer; }
 
 .cardContainer {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 3rem;
-  background-color: #323232; }
+  height: calc(100vh - 6rem);
+  padding: 3rem; }
+  .cardContainer__presentation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }

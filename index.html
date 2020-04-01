@@ -15,10 +15,16 @@
     <div id="app">
       <header class="header">
         <h1 class="header__title">Star Wars Api</h1>
+
+        <div class="buttonsContainer">
+          <button class="buttonsContainer__button" @click=" drawPeople">People</button>
+          <button class="buttonsContainer__button" @click="drawFilm">Films</button>
+          <button class="buttonsContainer__button" @click="drawPlanet">Planets</button>
+        </div>
       </header>
 
       <section class="cardContainer">
-        {{ drawPage() }}
+        <h1 class="cardContainer__presentation">Creado por StevenACZ</h1>
       </section>
     </div>
     
